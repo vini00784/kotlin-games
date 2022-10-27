@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome!</string>
+    <string name="image_description">Blue wave image</string>
+    <string name="text_login">With our app it will be much easier and more fun to keep track of your games!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remind me</string>
+    <string name="button_login">Login</string>
+    <string name="create_account">Sign Up</string>
+    <string name="developed_by">Developed by Vinícius Santos</string>
+    <string name="new_account_text">New account</string>
+    <string name="choose_photo">Shall we choose a photo?</string>
+    <string name="data_for_authentication">Data for authentication</string>
+    <string name="personal_data">Personal data</string>
+    <string name="input_name">What\'s your name?</string>
+    <string name="input_city">What\'s your city?</string>
+    <string name="input_birth_date">Birth date</string>
+    <string name="input_gamer_level">What is your gaming level?</string>
+    <string name="input_favorite_console">What is your favorite console?</string>
+
+    <string-array name="consoles">
+        <item>Super Nintendo</item>
+        <item>Nintendo Switch</item>
+        <item>Nintendo 64</item>
+        <item>Nintendo 3DS</item>
+        <item>Playstation 3</item>
+        <item>Playstation 4</item>
+        <item>Playstation 5</item>
+        <item>PSP</item>
+        <item>PS Vita</item>
+        <item>Xbox 360</item>
+        <item>Xbox One</item>
+        <item>Xbox Series S</item>
+    </string-array>
+
+    <string name="input_sex">Sex:</string>
+    <string name="male">Male</string>
+    <string name="feminine">Feminine</string>
+    <string name="games_finished">Games Finished</string>
+    <string name="games_current_playing">Current Playing</string>
+    <string name="games_age">Age</string>
+<!--    <string name="exhibited_leve">Exhibited Level</string>-->
+    <string name="registered_games">Your registered games</string>
+    <string name="menu_title_saved">Save</string>
+    <string name="menu_toast_saved">Saved with success!</string>
+    <string name="menu_tile_add">Add</string>
+
+    <!--    Banco de Dados Fake-->
+
+
+
+    <!--    Banco de Dados Fake-->
+</resources>

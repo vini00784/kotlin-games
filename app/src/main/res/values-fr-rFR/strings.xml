@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jeux</string>
+    <string name="login">Connexion</string>
+    <string name="welcome">Bienvenu!</string>
+    <string name="image_description">Image de vague bleue</string>
+    <string name="text_login">Avec notre application, il sera beaucoup plus facile et amusant de garder une trace de vos jeux !</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="remember">Rappelle moi</string>
+    <string name="button_login">Connexion</string>
+    <string name="create_account">S\'inscrire</string>
+    <string name="developed_by">Développé parVinícius Santos</string>
+    <string name="new_account_text">Nouveau compte</string>
+    <string name="choose_photo">Allons-nous choisir une photo?</string>
+    <string name="data_for_authentication">Données d\'authentification</string>
+    <string name="personal_data">Données personnelles</string>
+    <string name="input_name">Quel est votre nom?</string>
+    <string name="input_city">Quelle est ta ville?</string>
+    <string name="input_birth_date">Date de naissance</string>
+    <string name="input_gamer_level">Quel est ton niveau de jeu ?</string>
+    <string name="input_favorite_console">Quelle est votre console préférée ?</string>
+
+    <string-array name="consoles">
+        <item>Super Nintendo</item>
+        <item>Nintendo Switch</item>
+        <item>Nintendo 64</item>
+        <item>Nintendo 3DS</item>
+        <item>Playstation 3</item>
+        <item>Playstation 4</item>
+        <item>Playstation 5</item>
+        <item>PSP</item>
+        <item>PS Vita</item>
+        <item>Xbox 360</item>
+        <item>Xbox One</item>
+        <item>Xbox Series S</item>
+    </string-array>
+
+    <string name="input_sex">Sexe:</string>
+    <string name="male">Mâle</string>
+    <string name="feminine">Femelle</string>
+    <string name="games_finished">Jeux terminés</string>
+    <string name="games_current_playing">Lecture en cours</string>
+    <string name="games_age">Âge</string>
+    <!--    <string name="exhibited_leve">Exhibited Level</string>-->
+    <string name="registered_games">Vos jeux enregistrés</string>
+    <string name="menu_title_saved">Sauvegarder</string>
+    <string name="menu_toast_saved">Sauvé avec succès</string>
+    <string name="menu_tile_add">Ajouter</string>
+
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Juegos</string>
+    <string name="login">Acceso</string>
+    <string name="welcome">Bienvenidos!</string>
+    <string name="image_description">Imagen de onda azul</string>
+    <string name="text_login">¡Con nuestra aplicación será mucho más fácil y divertido llevar un registro de tus juegos!</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Clave</string>
+    <string name="remember">Recuerdame</string>
+    <string name="button_login">Acceso</string>
+    <string name="create_account">Inscribirse</string>
+    <string name="developed_by">Desarrollado por Vinícius Santos</string>
+    <string name="new_account_text">Nueva cuenta</string>
+    <string name="choose_photo">¿Elegimos una foto?</string>
+    <string name="data_for_authentication">Datos para la autenticación</string>
+    <string name="personal_data">Información personal</string>
+    <string name="input_name">¿Cuál es tu nombre?</string>
+    <string name="input_city">¿Cual es tu ciudad?</string>
+    <string name="input_birth_date">Fecha de nacimiento</string>
+    <string name="input_gamer_level">¿Cuál es tu nivel de juego?</string>
+    <string name="input_favorite_console">¿Cuál es tu consola favorita?</string>
+
+    <string-array name="consoles">
+        <item>Super Nintendo</item>
+        <item>Nintendo Switch</item>
+        <item>Nintendo 64</item>
+        <item>Nintendo 3DS</item>
+        <item>Playstation 3</item>
+        <item>Playstation 4</item>
+        <item>Playstation 5</item>
+        <item>PSP</item>
+        <item>PS Vita</item>
+        <item>Xbox 360</item>
+        <item>Xbox One</item>
+        <item>Xbox Series S</item>
+    </string-array>
+
+    <string name="input_sex">Sexo:</string>
+    <string name="male">Masculino</string>
+    <string name="feminine">Femenina</string>
+    <string name="games_finished">Juegos Terminados</string>
+    <string name="games_current_playing">Reproducción actual</string>
+    <string name="games_age">Años</string>
+    <!--    <string name="exhibited_leve">Exhibited Level</string>-->
+    <string name="registered_games">Tus juegos registrados</string>
+    <string name="menu_title_saved">Ahorrar</string>
+    <string name="menu_toast_saved">¡Salvado con éxito!</string>
+    <string name="menu_tile_add">Agregar</string>
+
+
+</resources>

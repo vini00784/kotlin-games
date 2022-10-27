@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/default_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="-10dp"
+        android:contentDescription="@string/image_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/ic_up_wave" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/color_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="73dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/welcome"
+        android:textColor="@color/default_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/default_color"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/text_login"
+        android:textColor="@color/opaque_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bakground_edit_text"
+        android:drawableStart="@drawable/ic_email_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/color_wave"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColorHint="@color/opaque_color"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bakground_edit_text"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/color_wave"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColorHint="@color/opaque_color"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:buttonTint="@color/color_wave"
+        android:padding="8dp"
+        android:text="@string/remember"
+        android:textColor="@color/opaque_color"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:text="@string/button_login"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/text_view_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/create_account"
+        android:textColor="@color/opaque_color"
+        android:textColorHint="@color/opaque_color"
+        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="-15dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_down_wave" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/color_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/developed_by"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

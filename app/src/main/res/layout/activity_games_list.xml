@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamesListActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/background_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="example@gmail.com"
+                android:textAlignment="center"
+                android:textColor="@color/default_color"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="UserName"
+                android:textColor="@color/default_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/games_finished"
+            android:textColor="@color/activity_games_text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView16"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/games_current_playing"
+            android:textColor="@color/activity_games_text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/games_age"
+            android:textColor="@color/activity_games_text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="35"
+            android:textColor="@color/background_color"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="06"
+            android:textColor="@color/background_color"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView16"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="23"
+            android:textColor="@color/background_color"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_level"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/level_icon" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Exhibited Level"
+            android:textColor="@color/background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+        app:srcCompat="@drawable/joystick" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/registered_games"
+        android:textColor="@color/default_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_games"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:listitem="@layout/holder_games_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
