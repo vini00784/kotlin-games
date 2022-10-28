@@ -14,7 +14,7 @@ class GamesDao {
             game1.code = 1
             game1.gameName = "Street Fighter"
             game1.developer = "Capcom"
-            game1.description = "Street Fighter, popularmente abreviado para SAF, é uma popular série de jogos de luta."
+            game1.description = "Street Fighter, popularmente abreviado para SF, é uma popular série de jogos de luta."
             game1.image = context.getDrawable(R.drawable.street_fighter)
 
             val game2 = Game()
