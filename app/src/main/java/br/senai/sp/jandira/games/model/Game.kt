@@ -14,7 +14,12 @@ class Game {
     @ColumnInfo(name = "game_name")
     var gameName = ""
 
-    var developer = ""
-    var description = ""
-    var image: Drawable? = null
+    @ColumnInfo(name = "game_developer")
+    var gameDeveloper = ""
+
+    @ColumnInfo(name = "game_description")
+    var gameDescription = ""
+
+    @ColumnInfo(name = "game_image")
+    var gameImage: Drawable? = null
 }
