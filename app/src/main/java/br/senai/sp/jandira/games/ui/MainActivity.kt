@@ -1,10 +1,8 @@
-package br.senai.sp.jandira.games
+package br.senai.sp.jandira.games.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.inputmethod.InputBinding
 import br.senai.sp.jandira.games.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
