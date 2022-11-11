@@ -15,7 +15,7 @@ class User {
     @ColumnInfo(name = "user_name")
     var userName = ""
 
-    var sex: Char? = null
+    var gender: Char = 'A'
 
     @ColumnInfo(name = "user_city")
     var userCity = ""
@@ -35,5 +35,5 @@ class User {
     var console: Console? = null
 
     @ColumnInfo(name = "user_level")
-    var userLevel: LevelsEnum? = null
+    var userLevel = LevelsEnum.BEGGINER
 }
