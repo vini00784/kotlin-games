@@ -28,9 +28,9 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
 
         fun bind(game: Game) {
             textGameTitle.text = game.gameName
-            textDeveloper.text = game.developer
-            textDescription.text = game.description
-            gameImage.setImageDrawable(game.image)
+            textDeveloper.text = game.gameDeveloper
+            textDescription.text = game.gameDescription
+            gameImage.setImageDrawable(game.gameImage)
         }
     }
 
