@@ -47,9 +47,12 @@
     <string name="menu_toast_saved">Saved with success!</string>
     <string name="menu_tile_add">Add</string>
 
-    <!--    Banco de Dados Fake-->
+    <!-- Enum níveis de gamer -->
 
+    <string name="level_begginer">Begginer</string>
+    <string name="level_basic">Basic</string>
+    <string name="level_casual">Casual</string>
+    <string name="level_advanced">Advanced</string>
 
-
-    <!--    Banco de Dados Fake-->
+    <!-- Enum níveis de gamer -->
 </resources>
