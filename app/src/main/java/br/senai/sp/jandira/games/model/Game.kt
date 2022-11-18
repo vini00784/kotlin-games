@@ -20,6 +20,6 @@ class Game {
     @ColumnInfo(name = "game_description")
     var gameDescription = ""
 
-    @ColumnInfo(name = "game_image")
-    var gameImage: Drawable? = null
+//    @ColumnInfo(name = "game_image")
+//    var gameImage: Bitmap? = null
 }

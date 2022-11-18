@@ -30,7 +30,7 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
             textGameTitle.text = game.gameName
             textDeveloper.text = game.gameDeveloper
             textDescription.text = game.gameDescription
-            gameImage.setImageDrawable(game.gameImage)
+//            gameImage.setImageDrawable(game.gameImage)
         }
     }
 

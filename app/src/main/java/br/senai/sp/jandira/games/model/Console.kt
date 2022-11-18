@@ -19,8 +19,8 @@ class Console {
     @ColumnInfo(name = "console_description")
     var consoleDescription = ""
 
-    @ColumnInfo(name = "console_image")
-    var consoleImage: Bitmap? = null
+//    @ColumnInfo(name = "console_image")
+//    var consoleImage: Bitmap? = null
 
     @ColumnInfo(name = "console_release_date")
     var releaseDate = 0

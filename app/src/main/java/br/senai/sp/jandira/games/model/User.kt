@@ -26,13 +26,13 @@ class User {
     @ColumnInfo(name = "user_password")
     var userPassword = ""
 
-    @ColumnInfo(name = "birth_date")
-    var birthDate: LocalDate? = null
+//    @ColumnInfo(name = "birth_date")
+//    var birthDate: LocalDate? = null
 
-    @ColumnInfo(name = "user_image")
-    var userImage: Bitmap? = null
+//    @ColumnInfo(name = "user_image")
+//    var userImage: Bitmap? = null
 
-    var console: Console? = null
+//    var console: Console? = null
 
     @ColumnInfo(name = "user_level")
     var userLevel = LevelsEnum.BEGGINER

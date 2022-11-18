@@ -6,7 +6,7 @@ import android.view.Menu
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.senai.sp.jandira.games.R
 import br.senai.sp.jandira.games.adapter.GamesAdapter
-import br.senai.sp.jandira.games.dao.GamesDao
+import br.senai.sp.jandira.games.dao.game.GamesDao
 import br.senai.sp.jandira.games.databinding.ActivityGamesListBinding
 
 class GamesListActivity : AppCompatActivity() {
