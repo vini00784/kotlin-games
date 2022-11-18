@@ -17,4 +17,10 @@ interface UserDao {
 
     @Query("SELECT * FROM tbl_user ORDER BY user_name ASC")
     fun getAll(): List<User>
+
+    @Query("SELECT * FROM tbl_user WHERE code = :id")
+    fun getUserById(id: Int): User
+
+    @Query("SELECT * FROM tbl_user WHERE user_email = :email")
+    fun getUserByEmail(email: String): User
 }

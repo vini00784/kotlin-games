@@ -131,7 +131,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress3"
+                android:id="@+id/edit_text_email"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -145,7 +145,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <EditText
-                android:id="@+id/editTextTextPassword3"
+                android:id="@+id/edit_text_password"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -153,9 +153,9 @@
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColorHint="@color/opaque_color"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress3"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress3"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_email"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_email"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_email" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -168,11 +168,11 @@
                 android:text="@string/personal_data"
                 android:textColor="@color/sign_up_text"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+                app:layout_constraintStart_toStartOf="@+id/edit_text_password"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_password" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/edit_text_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -180,12 +180,12 @@
                 android:hint="@string/input_name"
                 android:inputType="textPersonName"
                 android:textColorHint="@color/opaque_color"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword3"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_password"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/edit_text_city"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -193,12 +193,12 @@
                 android:hint="@string/input_city"
                 android:inputType="textPersonName"
                 android:textColorHint="@color/opaque_color"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_name"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_name"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/edit_text_birth_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -206,9 +206,9 @@
                 android:hint="@string/input_birth_date"
                 android:inputType="date"
                 android:textColorHint="@color/opaque_color"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_city"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_city"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_city" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -218,34 +218,34 @@
                 android:text="@string/input_gamer_level"
                 android:textColor="@color/opaque_color"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/editTextDate"
-                app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+                app:layout_constraintStart_toStartOf="@+id/edit_text_birth_date"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_birth_date" />
 
             <com.google.android.material.slider.Slider
-                android:id="@+id/slider"
+                android:id="@+id/slider_game_level"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
+                android:stepSize="1"
+                android:valueFrom="1"
+                android:valueTo="4"
                 app:layout_constraintEnd_toEndOf="@+id/textView12"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
-                app:layout_constraintTop_toBottomOf="@+id/textView12"
-                android:valueFrom="1"
-                android:valueTo="27"
-                android:stepSize="1"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/text_view_level"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="Casual"
+                android:text="@string/level_begginer"
                 android:textAlignment="center"
                 android:textColor="@color/default_color"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_birth_date"
                 app:layout_constraintHorizontal_bias="0.835"
-                app:layout_constraintStart_toEndOf="@+id/slider"
+                app:layout_constraintStart_toEndOf="@+id/slider_game_level"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
             <TextView
@@ -257,15 +257,15 @@
                 android:textAlignment="textEnd"
                 android:textColor="@color/opaque_color"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/slider"
-                app:layout_constraintTop_toBottomOf="@+id/slider" />
+                app:layout_constraintStart_toStartOf="@+id/slider_game_level"
+                app:layout_constraintTop_toBottomOf="@+id/slider_game_level" />
 
             <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/appCompatSpinner"
+                android:id="@+id/spinner_console_name"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:entries="@array/consoles"
-                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="@+id/text_view_level"
                 app:layout_constraintStart_toStartOf="@+id/textView8"
                 app:layout_constraintTop_toBottomOf="@id/textView8" />
 
@@ -277,26 +277,26 @@
                 android:text="@string/input_sex"
                 android:textColor="@color/opaque_color"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/appCompatSpinner"
-                app:layout_constraintTop_toBottomOf="@+id/appCompatSpinner" />
+                app:layout_constraintStart_toStartOf="@+id/spinner_console_name"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_console_name" />
 
             <RadioGroup
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="@+id/appCompatSpinner"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_console_name"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView11">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/button_male"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/male" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="100dp"
+                    android:id="@+id/button_feminine"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="@string/feminine" />
             </RadioGroup>

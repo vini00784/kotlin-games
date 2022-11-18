@@ -15,7 +15,7 @@ class User {
     @ColumnInfo(name = "user_name")
     var userName = ""
 
-    var gender: Char = 'A'
+    var gender: Char = 'U'
 
     @ColumnInfo(name = "user_city")
     var userCity = ""

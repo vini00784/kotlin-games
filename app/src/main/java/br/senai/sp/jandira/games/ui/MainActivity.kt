@@ -22,10 +22,28 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonLogin.setOnClickListener {
+            login()
             val openGamesActivity = Intent(this, GamesListActivity::class.java)
             startActivity(openGamesActivity)
         }
 
 
+    }
+
+    private fun login() {
+        if(validate()) {
+
+        }
+    }
+
+    private fun validate(): Boolean {
+        if(binding.loginEmail.text.isEmpty()) {
+            binding.loginEmail.error = "Email is required!"
+            return false
+        } else if(binding.loginPassword.text.isEmpty()) {
+            binding.loginEmail.error = "Email is required!"
+            return false
+        }
+        return true
     }
 }

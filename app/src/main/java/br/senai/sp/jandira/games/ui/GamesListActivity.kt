@@ -6,7 +6,6 @@ import android.view.Menu
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.senai.sp.jandira.games.R
 import br.senai.sp.jandira.games.adapter.GamesAdapter
-import br.senai.sp.jandira.games.dao.game.GamesDao
 import br.senai.sp.jandira.games.databinding.ActivityGamesListBinding
 
 class GamesListActivity : AppCompatActivity() {
@@ -24,7 +23,7 @@ class GamesListActivity : AppCompatActivity() {
         rvGames.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         adapterGames = GamesAdapter(this)
-        adapterGames.updateGamesList(GamesDao.getGames(this))
+//        adapterGames.updateGamesList(GamesDao.getGames(this))
 
         rvGames.adapter = adapterGames
 
