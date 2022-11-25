@@ -17,7 +17,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout8"
-            android:layout_width="210dp"
+            android:layout_width="250dp"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/background_profile"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/text_view_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
@@ -33,11 +33,11 @@
                 android:textAlignment="center"
                 android:textColor="@color/default_color"
                 android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="@+id/textView13"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintStart_toStartOf="@+id/text_view_username"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_username" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/text_view_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
@@ -170,7 +170,7 @@
             app:srcCompat="@drawable/level_icon" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/games_text_view_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"

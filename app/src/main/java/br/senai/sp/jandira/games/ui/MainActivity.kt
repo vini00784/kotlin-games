@@ -30,7 +30,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonLogin.setOnClickListener {
             if(login()) {
+                val emailText = binding.loginEmail.text.toString()
+                user = userRepository.getUserByEmail(emailText)
+
                 val openGamesListActivity = Intent(this, GamesListActivity::class.java)
+                openGamesListActivity.putExtra("userId", user?.code)
                 startActivity(openGamesListActivity)
             } else {
                 Toast.makeText(this, "Authentication is failed!", Toast.LENGTH_SHORT).show()
@@ -43,6 +47,7 @@ class MainActivity : AppCompatActivity() {
     private fun login(): Boolean {
         if(validate()) {
             val emailText = binding.loginEmail.text.toString()
+            userRepository = UserRepository(this)
             user = userRepository.getUserByEmail(emailText)
 
             if(user == null) {
