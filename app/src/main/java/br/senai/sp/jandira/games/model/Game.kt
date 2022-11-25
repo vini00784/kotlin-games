@@ -20,6 +20,12 @@ class Game {
     @ColumnInfo(name = "game_description")
     var gameDescription = ""
 
+    @ColumnInfo(name = "game_release_date")
+    var gameReleaseDate = 0
+
+    @ColumnInfo(name = "game_status")
+    var gameStatus = ""
+
 //    @ColumnInfo(name = "game_image")
 //    var gameImage: Bitmap? = null
 }
