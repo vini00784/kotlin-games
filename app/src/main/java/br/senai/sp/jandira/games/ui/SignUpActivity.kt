@@ -53,7 +53,7 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
-        inflater.inflate(R.menu.menu_new_user, menu)
+        inflater.inflate(R.menu.menu_new, menu)
 
         return true
     }
