@@ -1,8 +1,11 @@
 package br.senai.sp.jandira.games.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.senai.sp.jandira.games.R
 import br.senai.sp.jandira.games.adapter.GamesAdapter
@@ -52,5 +55,13 @@ class GamesListActivity : AppCompatActivity() {
         val inflater = menuInflater
         inflater.inflate(R.menu.menu_games_list, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.title.toString() == "Add") {
+            val openCreateGameActivity = Intent(this, CreateGameActivity::class.java)
+            startActivity(openCreateGameActivity)
+        }
+        return false
     }
 }
