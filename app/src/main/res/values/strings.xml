@@ -41,7 +41,7 @@
     <string name="games_finished">Games Finished</string>
     <string name="games_current_playing">Current Playing</string>
     <string name="games_age">Age</string>
-<!--    <string name="exhibited_leve">Exhibited Level</string>-->
+    <!--    <string name="exhibited_leve">Exhibited Level</string>-->
     <string name="registered_games">Your registered games</string>
     <string name="menu_title_saved">Save</string>
     <string name="menu_toast_saved">Saved with success!</string>
@@ -55,4 +55,15 @@
     <string name="level_advanced">Advanced</string>
 
     <!-- Enum níveis de gamer -->
+
+    <string name="new_game_text">New Game</string>
+    <string name="choose_game_photo">Insert the game photo</string>
+    <string name="insert_game_data">Enter game data</string>
+    <string name="insert_game_name">Name</string>
+    <string name="insert_game_developer">Developer (Ex.: CAPCOM)</string>
+    <string name="insert_game_description">Description</string>
+    <string name="insert_game_release_date">Release date</string>
+    <string name="insert_game_status">What is the status of this game?</string>
+    <string name="finished">Finished</string>
+    <string name="playing">Playing</string>
 </resources>
