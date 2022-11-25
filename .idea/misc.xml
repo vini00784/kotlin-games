@@ -13,11 +13,13 @@
         <entry key="app/src/main/res/drawable/ic_lock_24.xml" value="0.4185" />
         <entry key="app/src/main/res/drawable/ic_person_24.xml" value="0.4185" />
         <entry key="app/src/main/res/drawable/ic_up_wave.xml" value="0.4185" />
+        <entry key="app/src/main/res/layout/activity_create_game.xml" value="0.45" />
         <entry key="app/src/main/res/layout/activity_games_list.xml" value="0.5640625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5651041666666666" />
-        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.45" />
         <entry key="app/src/main/res/layout/holder_games_layout.xml" value="0.5630208333333333" />
         <entry key="app/src/main/res/menu/menu_games_list.xml" value="0.5640625" />
+        <entry key="app/src/main/res/menu/menu_new.xml" value="0.5640625" />
         <entry key="app/src/main/res/menu/menu_new_user.xml" value="0.5791666666666667" />
       </map>
     </option>

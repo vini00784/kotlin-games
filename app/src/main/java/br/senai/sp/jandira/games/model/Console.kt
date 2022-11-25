@@ -23,5 +23,5 @@ class Console {
 //    var consoleImage: Bitmap? = null
 
     @ColumnInfo(name = "console_release_date")
-    var releaseDate = 0
+    var consoleReleaseDate = 0
 }
