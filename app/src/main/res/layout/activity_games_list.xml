@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".ui.GamesListActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -58,7 +59,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/profile_picture"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     tools:srcCompat="@tools:sample/avatars" />
@@ -110,7 +111,7 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/text_view_games_finished"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-7dp"
@@ -123,7 +124,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/text_view_games_playing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-7dp"
@@ -136,7 +137,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/text_view_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-7dp"

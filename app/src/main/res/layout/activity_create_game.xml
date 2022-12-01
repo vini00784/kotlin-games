@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".ui.CreateGameActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/game_picture"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"
@@ -68,7 +69,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/game_picture"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
         app:srcCompat="@drawable/ic_camera_24" />
 
@@ -78,7 +79,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+        app:layout_constraintTop_toBottomOf="@+id/game_picture">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -92,61 +93,69 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView21">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/button_playing"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/playing" />
+                    android:text="@string/playing"
+                    android:textColor="@color/opaque_color"
+                    android:textColorHint="@color/opaque_color" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/button_finished"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/finished" />
+                    android:text="@string/finished"
+                    android:textColor="@color/opaque_color"
+                    android:textColorHint="@color/opaque_color" />
             </RadioGroup>
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/edit_text_game_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="@string/insert_game_name"
                 android:inputType="textPersonName"
+                android:textColorHint="@color/opaque_color"
                 app:layout_constraintStart_toStartOf="@+id/textView23"
                 app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/edit_text_game_developer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="@string/insert_game_developer"
                 android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                android:textColorHint="@color/opaque_color"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_game_name"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_game_name" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/edit_text_game_description"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="@string/insert_game_description"
                 android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+                android:textColorHint="@color/opaque_color"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_game_developer"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_game_developer" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/edit_text_game_release_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="@string/insert_game_release_date"
                 android:inputType="date"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+                android:textColorHint="@color/opaque_color"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_game_description"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_game_description" />
 
             <TextView
                 android:id="@+id/textView21"
@@ -156,8 +165,8 @@
                 android:text="@string/insert_game_status"
                 android:textColor="@color/opaque_color"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/editTextDate"
-                app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+                app:layout_constraintStart_toStartOf="@+id/edit_text_game_release_date"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_game_release_date" />
 
             <TextView
                 android:id="@+id/textView23"
