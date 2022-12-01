@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "tbl_console")
 class Console {
     @PrimaryKey(autoGenerate = true)
-    var code = 0
+    var codeConsole = 0
 
     @ColumnInfo(name = "console_name")
     var consoleName = ""

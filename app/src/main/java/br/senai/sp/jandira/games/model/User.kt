@@ -2,6 +2,7 @@ package br.senai.sp.jandira.games.model
 
 import android.graphics.Bitmap
 import androidx.room.ColumnInfo
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.time.LocalDate
@@ -26,13 +27,14 @@ class User {
     @ColumnInfo(name = "user_password")
     var userPassword = ""
 
-//    @ColumnInfo(name = "birth_date")
-//    var birthDate: LocalDate? = null
+    @ColumnInfo(name = "birth_date")
+    var birthDate: String? = null
 
-//    @ColumnInfo(name = "user_image")
-//    var userImage: Bitmap? = null
+    @ColumnInfo(name = "user_image")
+    var userImage: ByteArray? = null
 
-//    var console: Console? = null
+    @Embedded
+    var console: Console? = null
 
     @ColumnInfo(name = "user_level")
     var userLevel = LevelsEnum.BEGGINER
