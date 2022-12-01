@@ -1,15 +1,23 @@
 package br.senai.sp.jandira.games.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import br.senai.sp.jandira.games.R
-import br.senai.sp.jandira.games.repository.UserRepository
 import br.senai.sp.jandira.games.databinding.ActivitySignUpBinding
 import br.senai.sp.jandira.games.model.LevelsEnum
 import br.senai.sp.jandira.games.model.User
+import br.senai.sp.jandira.games.repository.ConsoleRepository
+import br.senai.sp.jandira.games.repository.UserRepository
+import br.senai.sp.jandira.games.utils.getBitmapFromUri
+import br.senai.sp.jandira.games.utils.getByteArrayFromBitmap
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -17,6 +25,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var userRepository: UserRepository
     lateinit var user: User
     private var id = 0
+    private var photo: Bitmap? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,8 +37,20 @@ class SignUpActivity : AppCompatActivity() {
         id = intent.getIntExtra("id", 0)
 
         binding.sliderGameLevel.addOnChangeListener { slider, value, fromUser ->
-            binding.textViewLevel.text = getSliderText(binding.sliderGameLevel.value.toInt()).toString()
+            binding.textViewLevel.text =
+                getSliderText(binding.sliderGameLevel.value.toInt()).toString()
         }
+
+        binding.userProfilePicture.setOnClickListener {
+            getImageGallery()
+        }
+
+        supportActionBar?.setBackgroundDrawable(
+            ColorDrawable(
+                ContextCompat.getColor(this, R.color.color_wave)
+            )
+        )
+        setupSpinner()
     }
 
     private fun getSliderText(position: Int): LevelsEnum {
@@ -41,7 +62,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.title.toString() == "Save") {
+        if (item.title.toString() == "Save") {
             if (validate()) {
                 save()
             } else {
@@ -63,9 +84,13 @@ class SignUpActivity : AppCompatActivity() {
         user.userPassword = binding.editTextPassword.text.toString()
         user.userName = binding.editTextName.text.toString()
         user.userCity = binding.editTextCity.text.toString()
-        // user.userBirthDate = binding.editTextBirthDate.text.toString()
+        user.birthDate = binding.editTextBirthDate.text.toString()
+        user.userImage = getByteArrayFromBitmap(photo)
+        user.console =
+            ConsoleRepository(this).getConsoleByName(binding.spinnerConsoleName.selectedItem.toString())
 
-        when(binding.sliderGameLevel.value.toInt()) {
+
+        when (binding.sliderGameLevel.value.toInt()) {
             1 -> {
                 user.userLevel = LevelsEnum.BEGGINER
             }
@@ -80,14 +105,11 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
 
-        if(binding.buttonMale.isChecked) {
+        if (binding.buttonMale.isChecked) {
             user.gender = 'M'
-        } else if(binding.buttonFeminine.isChecked) {
+        } else if (binding.buttonFeminine.isChecked) {
             user.gender = 'F'
         }
-
-
-
 
         userRepository = UserRepository(this)
         val id = userRepository.save(user)
@@ -99,22 +121,22 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun validate(): Boolean {
-        if(binding.editTextEmail.text.isEmpty()) {
+        if (binding.editTextEmail.text.isEmpty()) {
             binding.editTextEmail.error = "Email is required!"
             return false
-        } else if(binding.editTextPassword.text.isEmpty()) {
+        } else if (binding.editTextPassword.text.isEmpty()) {
             binding.editTextPassword.error = "Password is required!"
             return false
-        } else if(binding.editTextName.text.isEmpty()) {
+        } else if (binding.editTextName.text.isEmpty()) {
             binding.editTextName.error = "Name is required!"
             return false
-        } else if(binding.editTextCity.text.isEmpty()) {
+        } else if (binding.editTextCity.text.isEmpty()) {
             binding.editTextCity.error = "City is required!"
             return false
-        } else if(binding.editTextBirthDate.text.isEmpty()) {
+        } else if (binding.editTextBirthDate.text.isEmpty()) {
             binding.editTextBirthDate.error = "Birth date is required"
             return false
-        } else if(binding.editTextPassword.text.isEmpty()) {
+        } else if (binding.editTextPassword.text.isEmpty()) {
             binding.editTextPassword.error = "Password is required"
             return false
         }
@@ -123,4 +145,23 @@ class SignUpActivity : AppCompatActivity() {
     }
 
 
+    private fun getImageGallery() {
+        val intent = Intent(Intent.ACTION_PICK)
+        intent.type = "image/*"
+        startActivityForResult(intent, 100)
+    }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            photo = getBitmapFromUri(data?.data, this)
+        }
+    }
+
+    private fun setupSpinner() {
+        val listOfConsoles = ConsoleRepository(this).getAll().map { e -> e.consoleName }
+        binding.spinnerConsoleName.adapter =
+            ArrayAdapter(this, android.R.layout.simple_spinner_item, listOfConsoles)
+    }
 }
