@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import br.senai.sp.jandira.games.R
 import br.senai.sp.jandira.games.databinding.HolderGamesLayoutBinding
 import br.senai.sp.jandira.games.model.Game
+import br.senai.sp.jandira.games.utils.getBitmapFromByteArray
 
 class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.HolderGame>() {
 
@@ -30,7 +31,7 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
             textGameTitle.text = game.gameName
             textDeveloper.text = game.gameDeveloper
             textDescription.text = game.gameDescription
-//            gameImage.setImageDrawable(game.gameImage)
+            gameImage.setImageBitmap(getBitmapFromByteArray(game.gameImage))
         }
     }
 
