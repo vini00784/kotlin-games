@@ -1,12 +1,13 @@
 package br.senai.sp.jandira.games.repository
 
 import android.content.Context
-import br.senai.sp.jandira.games.dao.user.UserDb
+import br.senai.sp.jandira.games.database.AppDb
 import br.senai.sp.jandira.games.model.User
+import br.senai.sp.jandira.games.model.UserWithGame
 
 class UserRepository(context: Context) {
 
-    private val db = UserDb.getDataBase(context).userDao()
+    private val db = AppDb.getDataBase(context).userDao()
 
     fun save(user: User): Long {
         return db.save(user)
@@ -30,5 +31,9 @@ class UserRepository(context: Context) {
 
     fun getUserByEmail(email: String): User {
         return db.getUserByEmail(email)
+    }
+
+    fun getUserGame(userId: Int): List<UserWithGame> {
+        return db.getUserGame(userId)
     }
 }
